@@ -1,17 +1,17 @@
 {% set name = "atpublic" %}
-{% set version = "1.0" %}
+{% set version = "2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7dca670499e9a9d3aae5a8914bc799475fe24be3bcd29c8129642dda665f7a44
+  sha256: f9e84e16bd92145614eb32034ebbaebadb631564cf9c20c21c30fd39d3693498
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:
