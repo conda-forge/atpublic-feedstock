@@ -31,7 +31,7 @@ about:
   home: http://public.readthedocs.io/
   license: Apache-2.0
   license_family: APACHE
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: |
     A very simple decorator and function which populates a module’s __all__ and optionally 
     the module globals.
