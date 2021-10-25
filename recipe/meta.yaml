@@ -1,5 +1,5 @@
 {% set name = "atpublic" %}
-{% set version = "1.0" %}
+{% set version = "2.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,8 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7dca670499e9a9d3aae5a8914bc799475fe24be3bcd29c8129642dda665f7a44
+  sha256: d6b9167fc3e09a2de2d2adcfc9a1b48d84eab70753c97de3800362e1703e3367
+
 
 build:
   number: 0
@@ -17,26 +18,27 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.0
+    - python >=3.6
   run:
-    - python >=3.0
+    - python >=3.6
 
 test:
   imports:
     - public
-    - public.tests
+    - public.public
+    - public.private
 
 about:
   home: http://public.readthedocs.io/
   license: Apache-2.0
   license_family: APACHE
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: |
     A very simple decorator and function which populates a module’s __all__ and optionally 
-    the module globals. This provides both a pure-Python implementation and an optional C 
-    implementation.
+    the module globals.
   doc_url: https://public.readthedocs.io
 
 extra:
   recipe-maintainers:
     - johanneskoester
+    - cpcloud
