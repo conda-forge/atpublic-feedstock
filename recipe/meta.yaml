@@ -24,8 +24,10 @@ requirements:
 
 test:
   imports:
-    - atpublic
-    - atpublic.tests
+    - public
+    - public.public
+    - public.private
+    - public.tests
 
 about:
   home: http://public.readthedocs.io/
