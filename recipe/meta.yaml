@@ -27,7 +27,6 @@ test:
     - public
     - public.public
     - public.private
-    - public.tests
 
 about:
   home: http://public.readthedocs.io/
