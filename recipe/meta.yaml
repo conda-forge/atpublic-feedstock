@@ -1,5 +1,5 @@
 {% set name = "atpublic" %}
-{% set version = "3.1" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b4f260104679e235db2665e8d4ef4b9ea79785fe540926659c775e79dec296d9
+  sha256: 3098ee12d0107cc5009d61f4e80e5edcfac4cda2bdaa04644af75827cb121b18
 
 
 build:
