@@ -1,5 +1,5 @@
 {% set name = "atpublic" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb072b50e6484490404e5cb4034e782aaa339fdd6ac36434e53c10791aef18bf
+  sha256: b4f260104679e235db2665e8d4ef4b9ea79785fe540926659c775e79dec296d9
 
 
 build:
@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - pdm
+    - pdm-pep517
   run:
     - python >=3.6
 
