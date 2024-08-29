@@ -19,7 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - pdm
+    - pdm-pep517
   run:
     - python >=3.6
 
