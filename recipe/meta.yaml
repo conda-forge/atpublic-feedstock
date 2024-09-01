@@ -19,9 +19,10 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - pdm-backend
+    - hatchling
   run:
     - python >=3.8
+
 
 test:
   imports:
@@ -35,12 +36,11 @@ test:
 
 about:
   home: http://public.readthedocs.io/
+  dev_url: https://gitlab.com/warsaw/public.git
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: |
-    A very simple decorator and function which populates a module’s __all__ and optionally 
-    the module globals.
+  summary: Keep all y'all's __all__'s in sync
   doc_url: https://public.readthedocs.io
 
 extra:
