@@ -1,5 +1,5 @@
 {% set name = "atpublic" %}
-{% set version = "4.0" %}
+{% set version = "5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0f40433219e124edf115c6c363808ca6f0e1cfa7d160d86b2fb94793086d1294
+  sha256: d5cb6cbabf00ec1d34e282e8ce7cbc9b74ba4cb732e766c24e2d78d1ad7f723f
 
 
 build:
@@ -19,9 +19,10 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - pdm-backend
+    - hatchling
   run:
     - python >=3.8
+
 
 test:
   imports:
@@ -35,12 +36,11 @@ test:
 
 about:
   home: http://public.readthedocs.io/
+  dev_url: https://gitlab.com/warsaw/public.git
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
-  summary: |
-    A very simple decorator and function which populates a module’s __all__ and optionally 
-    the module globals.
+  summary: Keep all y'all's __all__'s in sync
   doc_url: https://public.readthedocs.io
 
 extra:
