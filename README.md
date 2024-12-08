@@ -7,9 +7,9 @@ Home: http://public.readthedocs.io/
 
 Package license: Apache-2.0
 
-Summary: A very simple decorator and function which populates a module’s __all__ and optionally
-the module globals.
+Summary: Keep all y'all's __all__'s in sync
 
+Development: https://gitlab.com/warsaw/public.git
 
 Documentation: https://public.readthedocs.io
 
