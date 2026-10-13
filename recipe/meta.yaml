@@ -1,5 +1,5 @@
 {% set name = "atpublic" %}
-{% set version = "8.0.1" %}
+{% set version = "9.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4cc00a2b8ea5645a268edc310667302fe1de2b91aba88d0bd634c0e6564f6ef4
+  sha256: 61ea62d8445d2aaa83b6dffaa3d90f99fcec10e16683ee9b13792cdcdafa0966
 
 
 build:
@@ -22,6 +22,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
+    # - atpublic-install >=1.0.0
 
 test:
   imports:
