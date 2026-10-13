@@ -17,19 +17,16 @@ build:
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
+    - pip
     - hatchling
   run:
     - python >={{ python_min }}
     # - atpublic-install >=1.0.0
 
-
 test:
   imports:
     - public
-    - public.public
-    - public.private
   commands:
     - pip check
   requires:
